@@ -8,7 +8,7 @@ The idea of starting to use [Workload Identity Federation](https://cloud.google.
 
 ```hcl
 module "github_actions_workload_identity_federation" {
-  source = "git@github.com:dapperlabs/dapperlabs-platform/terraform-google-workload-identity-federation?ref=<release>"
+  source = "github.com/dapperlabs-platform/terraform-google-workload-identity-federation?ref=<release>"
 
   project_id = module.project.project_id
 
