@@ -10,7 +10,7 @@ The idea of starting to use [Workload Identity Federation](https://cloud.google.
 module "github_actions_workload_identity_federation" {
   source = "github.com/dapperlabs-platform/terraform-google-workload-identity-federation?ref=<release>"
 
-  project_id = module.project.project_id
+  project = module.project.project_id
 
   pool_id     = "github-action-identity-pool"
   provider_id = "github-action-provider"
